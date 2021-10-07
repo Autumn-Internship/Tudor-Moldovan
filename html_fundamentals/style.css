@@ -4,6 +4,7 @@
     font-size: 35px;
     color: #37A953;
     text-align: center;
+    text-decoration: #1E703B underline;
 }
 
 h2 {
@@ -20,7 +21,7 @@ h3 {
     color: #378DA9 
 }
 
-p {
+p, li {
     font-family: 'Roboto', sans-serif;
     font-weight: 100; 
     font-size: 20px;
@@ -28,4 +29,9 @@ p {
 
 body {
     background-color: #BBE9DD;
+}
+
+.footer {
+    background-color: #70948F;
+    text-align: center;
 }
