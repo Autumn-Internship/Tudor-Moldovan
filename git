@@ -1,0 +1,56 @@
+[33mcommit f623e40859ab362b2720e9a5cfbc70ba15a5f76d[m[33m ([m[1;36mHEAD -> [m[1;32mhtml_fundamentals[m[33m, [m[1;31morigin/html_fundamentals[m[33m)[m
+Author: tudormoldovann <code.moldovanx@gmail.com>
+Date:   Thu Oct 7 14:07:27 2021 +0300
+
+    Basic structure of index.html
+
+[33mcommit 876b1f43f7aab53072e7f9d99ab8a0b881aa6d46[m
+Merge: 3f0e40e a2c94b0
+Author: tudormoldovann <code.moldovanx@gmail.com>
+Date:   Thu Oct 7 13:48:58 2021 +0300
+
+    Reviewed and fixed structure of the doc.
+
+[33mcommit 3f0e40ef23cf334a83494d0f0e10db5926df4cbb[m
+Author: tudormoldovann <code.moldovanx@gmail.com>
+Date:   Thu Oct 7 13:45:53 2021 +0300
+
+    Reviewed structure of document
+
+[33mcommit 1f4e9ea9afabc4ff58a5fc3523db179b953b4585[m
+Author: tudormoldovann <code.moldovanx@gmail.com>
+Date:   Thu Oct 7 13:43:15 2021 +0300
+
+    Fixed structure
+
+[33mcommit a2c94b0432e158661f075bd2ceb2a9658084a737[m
+Author: tudormoldovann <code.moldovanx@gmail.com>
+Date:   Thu Oct 7 13:21:15 2021 +0300
+
+    Modified the structure of the document, including the main titles and content just for a preview.
+
+[33mcommit 8f4b9ba6a5c361aff38943ac388c1d110d0c2b4c[m
+Author: tudormoldovann <code.moldovanx@gmail.com>
+Date:   Thu Oct 7 12:15:58 2021 +0300
+
+    Added style.css
+    
+    Styling sheet
+
+[33mcommit 80349609408c42c00fa78dda23e301ffd4169d15[m
+Author: tudormoldovann <code.moldovanx@gmail.com>
+Date:   Thu Oct 7 12:09:50 2021 +0300
+
+    Added index.html
+
+[33mcommit 2b95e66422170fb6f268230cf610241c7eedf27c[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Tudor Moldovan <91948472+tudormoldovann@users.noreply.github.com>
+Date:   Thu Oct 7 11:41:13 2021 +0300
+
+    Delete README.md
+
+[33mcommit d10f2ca7fd938043701171501aec19d9f2f08ed3[m
+Author: Tudor Moldovan <91948472+tudormoldovann@users.noreply.github.com>
+Date:   Tue Oct 5 12:51:18 2021 +0300
+
+    Initial commit
