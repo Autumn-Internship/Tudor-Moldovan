@@ -1,0 +1,19 @@
+input[type=text]:focus {
+  outline-color: #177FB1;
+}
+
+input[type=submit]:hover {
+  background-color: #177FB1;
+}
+
+a:active {
+  color:red;
+}
+
+p::first-letter {
+  font-weight: bold;
+}
+
+label::after {
+  content: "*";
+}
