@@ -1,13 +1,23 @@
-input[type=text]:focus {
-  outline-color: #177FB1;
+:root {
+  --fav_color: #177fb1;
+}
+fieldset {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 50px);
+  
 }
 
-input[type=submit]:hover {
-  background-color: #177FB1;
+input[type="text"]:focus {
+  outline-color: var(--fav_color);
+}
+
+input[type="submit"]:hover {
+  background-color: var(--fav_color);
 }
 
 a:active {
-  color:red;
+  color: red;
 }
 
 p::first-letter {
@@ -16,4 +26,41 @@ p::first-letter {
 
 label::after {
   content: "*";
+}
+
+/* Mobile Devices */
+@media all and (min-width: 320px) {
+  fieldset {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(10, 50px);
+    background-color: rgb(99, 30, 210);
+  }
+}
+
+/* iPads */
+@media all and (min-width: 481px) {
+  fieldset {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(10, 50px);
+    background-color: rgb(62, 134, 131);
+  }
+}
+
+/* Small screens */
+@media all and (min-width: 769px) {
+  fieldset {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 50px);
+    background-color: chocolate;
+  }
+}
+
+
+/*Desktops, TV's*/
+ @media all and (min-width: 1025px) {
+  fieldset {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 50px);
+    background-color: blueviolet;
+  }
 }
