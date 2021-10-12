@@ -5,53 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form CEL.RO</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <form>
       <fieldset>
-        <legend> Date de contact </legend>
-
-        <label for="nume">Nume*</label>
-        <input type="text" id="nume" required />
-        <br />
-        <label for="prenume">Prenume*</label>
-        <input type="text" id="prenume" required />
-        <br />
-        <label for="email">Adresa de email*</label>
-        <input type="email" id="email" required />
-        <br />
-        <label for="forma-adresare"> Forma de adresare* </label>
-        <select name="adresari" id="forma-adresare" required>
-          <option value="barbat">Domnul</option>
-          <option value="femeie">Doamna</option>
-        </select>
-        <br />
-        <label for="phone">Numar de telefon*</label>
-        <input type="text" id="phone" pattern="[0]{1}[0-9]{9}" required />
-        <br />
-        <label for="contact">Adresa de contact*</label>
-        <input type="text" id="contact" required />
-        <br />
-        <label for="judet/sector"> Judet/Sector* </label>
-        <select name="judete" id="judet/sector" required>
-          <option value="judet">--JUDET--</option>
-          <option value="cluj">Cluj</option>
-          <option value="bucuresti">Bucuresti</option>
-          <option value="timis">Timis</option>
-        </select>
-        <br />
-        <label for="localitate"> Localitatea</label>
-        <select name="localitati" id="localitate" required>
-          <option value="judetex">--LOCALITATEA--</option>
-          <option value="cjn">Cluj-Napoca</option>
-          <option value="buc">Bucuresti</option>
-          <option value="tm">Timisoara</option>
-        </select>
-        <br>
-        <label for="termeni-conditii">
+        <legend>Date de contact</legend>
+        <p>
+          <label for="nume" class="required">Nume</label>
+          <input type="text" id="nume" required />
+        </p>
+        <p>
+          <label for="prenume" class="required">Prenume</label>
+          <input type="text" id="prenume" required />
+        </p>
+        <p>
+          <label for="email" class="required">Adresa de email</label>
+          <input
+            type="text"
+            id="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            required
+          />
+        </p>
+        <p>
+          <label for="forma-adresare" class="required">Forma de adresare</label>
+          <select name="adresari" id="forma-adresare" required>
+            <option value="barbat">Domnul</option>
+            <option value="femeie">Doamna</option>
+          </select>
+        </p>
+        <p>
+          <label for="phone" class="required">Numar de telefon</label>
+          <input type="text" id="phone" pattern="[0]{1}[0-9]{9}" required />
+        </p>
+        <p>
+          <label for="contact" class="required">Adresa de contact</label>
+          <input type="text" id="contact" required />
+        </p>
+        <p>
+          <label for="judet/sector" class="required">Judet/Sector</label>
+          <select name="judete" id="judet/sector" required>
+            <option value="judet">--JUDET--</option>
+            <option value="cluj">Cluj</option>
+            <option value="bucuresti">Bucuresti</option>
+            <option value="timis">Timis</option>
+          </select>
+        </p>
+        <p>
+          <label for="localitate" class="required"> Localitatea</label>
+          <select name="localitati" id="localitate" required>
+            <option value="judetex">--LOCALITATEA--</option>
+            <option value="cjn">Cluj-Napoca</option>
+            <option value="buc">Bucuresti</option>
+            <option value="tm">Timisoara</option>
+          </select>
+        </p>
+        <p>
+          <label for="termeni-conditii">
             <input type="checkbox" id="termeni" name="termeni-conditii" />
-            Am citit termenii si conditiile CEL.RO si sunt de acord cu acestea.
+            Am citit termenii si conditiile <a href="#">cel.ro</a> si sunt de
+            acord cu acestea.
           </label>
+        </p>
+        <p>
+          <input type="submit" value="Creare cont" />
+        </p>
       </fieldset>
     </form>
   </body>
