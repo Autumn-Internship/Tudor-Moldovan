@@ -1,66 +1,122 @@
-:root {
-  --fav_color: #177fb1;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+:root {
+  --fav_color: white;
+  --btn_color: #ff601d;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
 fieldset {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 50px);
-  
+  border: none;
+}
+
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 100%;
+  background-color: #e0e0e0;
+  padding: 25px 30px;
+  border: 1px solid black;
+}
+
+.container h1 {
+  font-size: 13px;
+  font-family: Helvetica;
+}
+
+.date-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--fav_color);
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.termeni {
+  background-color: var(--fav_color);
+  margin: 0px 0px 15px;
+  padding: 15px;
+}
+
+.user-inputs {
+  margin-bottom: 5px;
+  width: calc(100% / 3 - 20px);
+}
+
+.user-inputs input,
+select {
+  height: 45px;
+  width: 100%;
+  padding: 5px;
+}
+
+.user-inputs label {
+  font-family: Helvetica;
+  font-size: 13px;
+}
+
+.user-inputs label:after {
+  content: "*";
+}
+
+button[type="submit"]:hover {
+  background-color: orangered;
+  border: 1px solid black;
 }
 
 input[type="text"]:focus {
-  outline-color: var(--fav_color);
+  border: 2px solid #787878;
 }
 
-input[type="submit"]:hover {
-  background-color: var(--fav_color);
+a:link {
+  color: black;
+}
+
+.submit {
+  text-align: center;
+  padding: 3px;
+}
+
+.submit button {
+  background-color: var(--btn_color);
+  border-color: var(--btn_color);
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: Helvetica;
 }
 
 a:active {
   color: red;
 }
 
-p::first-letter {
-  font-weight: bold;
-}
-
-label::after {
-  content: "*";
-}
-
-/* Mobile Devices */
-@media all and (min-width: 320px) {
-  fieldset {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(10, 50px);
-    background-color: rgb(99, 30, 210);
+/* Tablets */
+@media (max-width: 768px) {
+  .user-inputs {
+    width: calc(100% / 2 - 20px);
   }
 }
 
-/* iPads */
-@media all and (min-width: 481px) {
-  fieldset {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(10, 50px);
-    background-color: rgb(62, 134, 131);
-  }
-}
-
-/* Small screens */
-@media all and (min-width: 769px) {
-  fieldset {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 50px);
-    background-color: chocolate;
-  }
-}
-
-
-/*Desktops, TV's*/
- @media all and (min-width: 1025px) {
-  fieldset {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 50px);
-    background-color: blueviolet;
+/* Phones */
+@media (max-width: 480px) {
+  .user-inputs {
+    width: 100%;
   }
 }
