@@ -118,6 +118,6 @@ a:active {
 /* Phones */
 @media (max-width: 480px) {
   .user-inputs {
-    width: 100%;
+    width: 100% - 20%;
   }
 }
