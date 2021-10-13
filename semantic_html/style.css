@@ -34,7 +34,8 @@ header img {
   border: 1px solid black;
 }
 
-.container h1 {
+.container h1,
+h2 {
   font-size: 13px;
   font-family: Helvetica;
 }
