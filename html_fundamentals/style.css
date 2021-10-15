@@ -1,0 +1,38 @@
+.header {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  color: #37a953;
+  text-align: center;
+  text-decoration: #1e703b underline; 
+}
+
+h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 450;
+  font-size: 35px;
+  color: #3754a9;
+}
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  color: #378da9;
+}
+
+p,
+li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+body {
+  background-color: #bbe9dd;
+}
+
+.footer {
+  background-color: #70948f;
+  text-align: center;
+}
