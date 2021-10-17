@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slideshow</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Random pics </h1>
+
+    <section class="photos">
+      <img class="photo" src="/img/photo1.jpg" alt="photo1" />
+      <img class="photo" src="/img/photo2.jpg" alt="photo2" />
+      <img class="photo" src="/img/photo3.jpg" alt="photo3" />
+      <img class="photo" src="/img/photo4.jpg" alt="photo4" />
+      <img class="photo" src="/img/photo5.jpg" alt="photo5" />
+      <img class="photo" src="/img/photo6.jpg" alt="photo6" />
+      <img class="photo" src="/img/photo7.jpg" alt="photo7" />
+      <img class="photo" src="/img/photo8.jpg" alt="photo7" />
+    </section>
+
+    <section class="main-photo">
+      <img src="/img/main.jpg" alt="photo7" class="main" />
+    </section>
+
+    <footer>
+      <p>These photos were downloaded from <span>unsplash.com</span></p>
+    </footer>
+
+    <script>
+      // Select main photo
+      const mainPhoto = document.querySelector(".main");
+
+      // Select photos container
+      const photos = document.querySelector(".photos");
+
+      // event.target will return the img src clicked and will set it to the main image
+      photos.addEventListener("click", function (event) {
+        mainPhoto.setAttribute("src", event.target.src);
+      });
+    </script>
+  </body>
+</html>
