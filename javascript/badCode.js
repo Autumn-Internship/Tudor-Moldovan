@@ -11,7 +11,9 @@ function processOrder(customerInfo, basket, options) {
 
   // isAddressValid (BOOLEAN) > validateAddress
 
-  if (isAddressValid === false) {
+  // !isAddressValid = (isAddressValid === false)
+
+  if (!isAddressValid) {
     return;
   }
 
