@@ -13,7 +13,9 @@ function processOrder(customerInfo, basket, options) {
 
 
 
+
   // !isAddressValid = (isAddressValid === false)
+
   if (isAddressValid === false) {
     return;
   }
