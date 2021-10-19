@@ -1,3 +1,5 @@
+// https://replit.com/@alexandraturian/onePermutationPalindrom#index.js
+
 const canBePalindrome = (word) => {
   const mapping = new Set();
   // this will print each letter of a word. A word is NOT a palindrome if it has more than 1 element which hasn't a pair.
